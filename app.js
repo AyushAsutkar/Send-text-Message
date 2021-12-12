@@ -40,7 +40,6 @@ app.post('/', (req, res) => {
   const text = req.body.text;
 
   
-  // const to = "919657350382"
   // const text = 'A text message sent using the Vonage SMS API'
 
   vonage.message.sendSms(from, to, text, (err, responseData) => {
